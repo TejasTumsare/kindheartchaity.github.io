@@ -885,6 +885,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 30px 50px;
   }
   .copyright .social-icons {
     margin-top: 30px;
