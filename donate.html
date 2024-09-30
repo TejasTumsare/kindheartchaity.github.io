@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="donate.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=metropolis@400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Kind Heart Charity</title>
+</head>
+
+<body>
+
+    <header class="info">
+        <div class="address">
+            <i class="fa-solid fa-location-dot"><a href="">Akershusstranda 20, 0150 Oslo, Norway</a></i>
+        </div>
+        <div class="email">
+            <i class="fa-regular fa-envelope"><a href="#">info@company.com</a></i>
+        </div>
+        <div class="social-links">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <navbar class="nav">
+        <div class="nav-logo">
+            <img src="./assets/img/logo.png" alt="logo">
+            <div class="logo-title">
+                <h1>Kind Heart Charity</h1>
+                <p>NON-PROFIT ORGANIZATION</p>
+            </div>
+        </div>
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul id="nav-menu" class="menu-list">
+            <li class="nav-list"><a href="index.html">Home</a></li>
+            <li class="nav-list"><a href="index.html#about">About</a></li>
+            <li class="nav-list"><a href="index.html#causes">Causes</a></li>
+            <li class="nav-list"><a href="#volunteer">Volunteer</a></li>
+            <li class="nav-list"><a href="#news">News</a></li>
+            <li class="nav-list"><a href="index.html#contact">Contact</a></li>
+            <li class="nav-list"><button class="nav-button">Donate</button></li>
+        </ul>
+    </navbar>
+    </header>
+
+
+    <main class="make-a-donation">
+        <div class="donation-form">
+            <form action="">
+                <h1>Make a Donation</h1>
+                <h3>Donation Frequency</h3>
+                <div class="frequency">
+                    <div class="half left" onclick="">
+                        <p>One Time</p>
+                    </div>
+                    <div class="half right" onclick="">
+                        <p>Monthly</p>
+                    </div>
+                </div>
+                <h3>Select an Amount</h3>
+                <div class="amount">
+                    <div class="grid-items">$10</div>
+                    <div class="grid-items">$15</div>
+                    <div class="grid-items">$20</div>
+                    <div class="grid-items">$30</div>
+                    <div class="grid-items">$45</div>
+                    <div class="grid-items">$50</div>
+                    <div class="item-7">
+                        <input type="number" placeholder="      Custom amount" min="0" step="0.01">
+                    </div>
+
+                </div>
+                
+                <h3>Personal Info</h3>
+                <div class="pinfo">
+                    <input type="text" id="name" placeholder="Jack Doe" required>
+                    <input type="email" id="email" placeholder="jackdoe@gmail.com" required>
+                </div>
+                <h3>Choose Payment</h3>
+                <div class="payment">
+                    <input type="radio" name="option" value="option1"><i class="fa-regular fa-credit-card"></i>Debit or
+                    Credit card
+                    </label><br>
+                    <label>
+                        <input type="radio" name="option" value="option2"><i class="fa-brands fa-paypal"></i>Paypal
+                    </label>
+                </div>
+                <input type="submit" id="button" href="donate.html" value="Make a Donation">
+            </form>
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-cols">
+                    <img src="./assets/img/logo.png" alt="logo">
+                </div>
+                <div class="footer-cols">
+                    <h1>Quick Links</h1>
+                    <div class="col-info">
+                        <ul>
+                            <li><a href="">Our Story</a></li>
+                            <li><a href="">Newsroom</a></li>
+                            <li><a href="">Classes</a></li>
+                        </ul>
+                        <ul class="ul-connect">
+                            <li><a href="">Become a Volunteer</a></li>
+                            <li><a href="">Partener with Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-cols">
+                    <h1>Contact Information</h1>
+                    <div>
+                        <ul>
+                            <li><i class="fa-solid fa-phone"></i><a href="">120-240-9600</a></li>
+                            <li><i class="fa-regular fa-envelope"></i><a href="">donate@charity.org</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i><span>Akershusstranda 20, 0150 Oslo,
+                                    Norway</span></li>
+                        </ul>
+                        <button type="submit">Get Direction</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <section class="copyright">
+        <p>Copyright © 2036 <strong>Kind Heart </strong>Charity Org. Design: <strong>TemplateMo</strong></p>
+        <div class="social-icons">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <div class="top-button">
+        <a href="#" id="topBtn"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <script src="script.js">
+    </script>
+
+
+</body>
+
+</html>

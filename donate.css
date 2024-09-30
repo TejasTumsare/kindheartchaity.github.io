@@ -1,0 +1,205 @@
+/* Make A Donation  */
+
+.make-a-donation {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)),
+      url("./assets/img/hero-bg.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 120vh;
+    padding: 150px 0px;
+  }
+  
+  .donation-form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: auto;
+    width: 630px;
+    border-radius: 20px;
+  }
+  form {
+    padding: 50px 50px;
+    letter-spacing: normal;
+  }
+  form h1 {
+    font-size: 35px;
+  }
+  form h3 {
+    font-size: 25px;
+    margin: 20px 0px;
+    color: #5bc1ac;
+  }
+  .frequency {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #eff6fc;
+    border-radius: 5px;
+  }
+  .frequency :hover {
+    border-radius: 5px;
+  }
+  
+  .half {
+    flex: 1;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .half:hover {
+    background-color: #4c565e;
+    color: white;
+  }
+  .half p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .amount {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .amount .grid-items {
+    background-color: #eff6fc;
+    text-align: center;
+    vertical-align: middle;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: default;
+  }
+  .amount .item-7 {
+    grid-column: span 2;
+    position: relative;
+  }
+  .item-7 input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to right, #4c565e 20%, #eff6fc 20%);
+    border-radius: 5px;
+    padding: 0;
+    text-align: center;   
+    line-height: 50%;    
+  }
+  .item-7 input::placeholder{
+    text-align: center;
+  }
+  .item-7::before {
+    content: "$";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: white;
+  }
+  
+  .amount .item-7 .left {
+    width: 20%;
+    height: 100%;
+    background-color: #4c565e;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px 0px 0px 5px;
+  }
+  .amount .item-7 .right {
+    width: 80%;
+  }
+  
+  .amount .grid-items:hover {
+    background-color: #4c565e;
+    color: white;
+  }
+  .pinfo input {
+    height: 50px;
+    width: 200px;
+    background-color: #eff6fc;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0px 20px;
+    font-size: 16px;
+  }
+  .pinfo #email {
+    margin-left: 40px;
+  }
+  .pinfo input::placeholder {
+    font-size: 16px;
+    color: black;
+  }
+  
+  .payment input {
+    margin: 10px 0px;
+  }
+  .payment input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+  }
+  .payment i {
+    margin: 0px 10px;
+    color: #717275;
+  }
+  form #button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #4c565e;
+    margin-top: 40px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  form #button:hover {
+    background-color: #5bc1ac;
+  }
+  
+  @media (max-width: 768px) {
+    .make-a-donation{
+      padding: 200px 0px;
+    }
+    .donation-form{
+      width: 450px;
+    }
+    .item-7::before{
+      left: 10px;
+    }
+    .item-7 input{
+      font-size: 14px;
+    }
+    .pinfo input{
+      width: 100%;
+      padding: 0px 10px;
+      margin-bottom: 20px;
+    }
+    .pinfo #email {
+      margin-left: 0px;
+    }
+  
+  }
+  @media (max-width: 576px){
+    .donation-form{
+      width: 350px;
+    }
+    .item-7 input{
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+  
+  
