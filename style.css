@@ -359,16 +359,15 @@ body {
   border-radius: 20px;
   background-color: white;
   padding: 40px 40px;
+  text-align: center;
 }
 
 .donation h1 {
   font-weight: 600;
   color: #5bc1ac;
   font-size: 50px;
-  margin-left: 20px;
 }
 .donation p {
-  margin-left: 20px;
   color: #717275;
 }
 
@@ -387,7 +386,7 @@ body {
   }
   .story-content-up {
     width: auto;
-    height: 220px;
+    height: auto;
   }
   .story-content-down {
     display: flex;
@@ -405,7 +404,7 @@ body {
 @media (max-width: 768px) {
   .group-img {
     width: auto;
-    height: 350px;
+    height: auto;
     margin: 0px 50px;
   }
   .story-content-up {
@@ -418,7 +417,6 @@ body {
   }
   .donation {
     width: 100%;
-    text-align: center;
   }
 }
 
