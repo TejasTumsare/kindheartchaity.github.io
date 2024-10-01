@@ -402,9 +402,12 @@ body {
 }
 
 @media (max-width: 768px) {
+  .our-story{
+    padding-top: 200px;
+  }
   .group-img {
     width: auto;
-    height: auto;
+    height: 350px;
     margin: 0px 50px;
   }
   .story-content-up {
@@ -417,6 +420,7 @@ body {
   }
   .donation {
     width: 100%;
+    text-align: center;
   }
 }
 
@@ -586,6 +590,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .our-causes{
+    padding-top: 200px;
+  }
   .causes-cards {
     width: 300px;
   }
@@ -596,7 +603,7 @@ body {
 
 /* Conatact Section  */
 
-.contact {
+.contact{
   padding: 100px 0px;
   display: flex;
   justify-content: center;
@@ -718,8 +725,10 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .get-in-touch {
     margin-bottom: 30px;
+    margin-top: 100px;
   }
   .get-in-touch h1 {
     font-size: 40px;
@@ -862,6 +871,7 @@ body {
 .social-icons ul {
   list-style: none;
   display: flex;
+  align-items: center;
 }
 .social-icons ul li a {
   font-size: 16px;
